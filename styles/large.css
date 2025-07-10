@@ -1,0 +1,58 @@
+@media only screen and (min-width: 768px) {
+    header,
+    .navigation,
+    main,
+    footer {
+        max-width: 100%;
+    }
+
+    #ham {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 7fr 3fr;
+    }
+
+    h1 {
+        grid-column: 1/3;
+    }
+
+    .about {
+        grid-column: 1/2;
+    }
+
+    .about p {
+        height: 100%;
+    }
+
+    .photo {
+        grid-column: 2/2;
+    }
+
+    .web {
+        grid-column: 1/3;
+        margin-top: -0.3rem;
+    }
+
+    h1,
+    header,
+    section,
+    .navigation {
+        padding: .3rem;
+    }
+
+    #menu a:hover {
+        color: #2d00e1;
+    }
+
+    #course-list {
+        display: flex;
+        flex-direction: row;
+    }
+}

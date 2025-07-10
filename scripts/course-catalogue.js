@@ -1,20 +1,3 @@
-const hambutton = document.getElementById("ham");
-const menu = document.getElementById("menu");
-const curentYear = document.getElementById("currentyear");
-const lastModified = document.getElementById("lastModified");
-
-hambutton.addEventListener("click", ()=> {
-    hambutton.classList.toggle("show");
-    menu.classList.toggle("show")
-}
-)
-
-const today = new Date().getFullYear();
-const modified = new Date(document.lastModified);
-
-curentYear.textContent = `©${today}`;
-lastModified.textContent = `Last Modified: ${modified}`;
-
 const courses = [
     {
         subject: 'CSE',
@@ -134,10 +117,21 @@ function renderCourses(courses) {
         });
         courseList.appendChild(coursebutton);
     });
+    const totalCredits = courses.reduce((acc, course) => acc + course.credits, 0);  
+
+    const creditDiv = document.getElementById("total-credits");
+    if (!creditDiv) {
+        const creditP = document.createElement("p");
+        creditP.textContent = `Total credit for courses listed above is: ${totalCredits}`;
+    } else {
+        creditDiv.textContent = `Total credit for courses listed above is: ${totalCredits}`;
+    }
+
 }
 
 function displayCourse(course) {
     const courseInfo = document.getElementById("course-info")
+    courseInfo.innerHTML = "",
     courseInfo.innerHTML = `
         <p><strong>Course Name:</strong> ${course.subject}${course.number}</p>
         <p><strong>Title:</strong> ${course.title}</p>
@@ -147,5 +141,6 @@ function displayCourse(course) {
         <p><strong>Credit:</strong> ${course.credits}</p>
         <p><strong>Completed:</strong> ${course.completed}</p>
     `
+    courseInfo.classList.toggle("show")
 }
 createMenu();
