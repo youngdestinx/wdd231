@@ -5,8 +5,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory Page</title>
-    <meta name="description" content="Directory page for">
+    <title>Shibiri Chamber Of Commerce</title>
+    <meta name="description" content="Directory page of Shibir Chamber Of Commerce">
     <meta name="author" content="Destiny Linus">
 
     <link rel="icon" href="images/favicon.ico">
@@ -15,9 +15,18 @@
     <meta property="og:description" content="This is a resource site for local businesses, community members and visitors in Shibiri">
     <meta property="og:url" content="https://youngdestinx.github.io/wdd231/chamber">
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="images/logo5.svg">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Shibiri Chamber of Business">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
 
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
@@ -28,11 +37,15 @@
 <body>
     <header>
         <div>
-            <img src="images/human.svg" alt="Destiny logo" width="24">
+            <img src="images/logo4.svg" alt="Business logo" width="24">
             <span>Shibiri Chamber Of Commerce</span>
         </div>
-        <span>🌓</span>
-        <a id="ham" href="#"></a>
+
+        <div class="icons">
+            <span>🌓</span>
+            <a id="ham" href="#"></a>
+        </div>
+        
     </header>
 
     <nav>
@@ -45,8 +58,8 @@
     </nav>
 
     <section class="hero">
-        <img src="" alt="hero image" width="480">
-        <p>Keynote Ticket</p>
+        <img src="images/hero-image.webp" alt="hero image" width="480">
+        <span>Shibiri Chamber Of Business</span>
     </section>
 
     <main>
@@ -67,7 +80,7 @@
 
         <section class="current-weather">
             <h2>Current Weather</h2>
-            <img src="" alt="weather icon" width="50">
+            <img src="images/weather-icon.svg" alt="weather icon" width="50">
             <p>
                 <strong>75⁰</strong> F <br>
                 Party Cloudy <br> High: 85⁰ <br> Low: 52⁰ <br> Humidity: 34% <br> Sunrise: 7:30am <br>
@@ -84,22 +97,30 @@
             </p>
         </section>
 
-        <section id="companies"></section>
+        <section id="companies">
+                <a id="grid" href="##"></a>
+        </section>
     </main>
 
     <footer>
-        <h3>Shibiri Chamber Of Commerce</h3>
-        <p>35, Onaolapo Street <br> info@shibiricc.org <br> (234) 9152-680-996 <br></p>
-
+        <div>
+            <h3>Shibiri Chamber Of Commerce</h3>
+            <p id="span">
+                35, Onaolapo Street <br> info@shibiricc.org <br> (234) 9152-680-996 <br>
+            </p>
+        </div>
+        
         <nav>
             <a href="#"><img src="images/whatsapp.svg" alt="whatsapp link" width="50"></a>
             <a href="#"><img src="images/facebook.svg" alt="facebook link" width="50"></a>
             <a href="#"><img src="images/linkedin.svg" alt="linkedin link" width="50"></a>
         </nav>
 
-        <p>WDD231 Class Project <br> Linus E. Destiny</p>
-        <p><span id="currentyear"></span> Shibiri Chamber Of Commerce</p>
-        <p id="lastModified"></p>
+        <p>
+            WDD231 Class Project <br> Linus E. Destiny
+            <span id="currentyear"></span> Shibiri Chamber Of Commerce
+            <span id="lastModified"></span>
+        </p>        
     </footer>
 </body>
 </html>

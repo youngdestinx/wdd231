@@ -5,7 +5,7 @@
             "address" : "1, Shibiri, Ojo, Lagos",
             "phone" : "234-123-4567",
             "website" : "https://www.aaa.com#",
-            "image" : "",
+            "image" : "images/logo9.svg",
             "membershipLevel" : 1,
             "description" : "deals in technology",
             "industry" : "Technology"
@@ -16,7 +16,7 @@
             "address" : "1, Ajangabdi, Ojo, Lagos",
             "phone" : "234-123-4557",
             "website" : "https://www.aab.com#",
-            "image" : "",
+            "image" : "images/logo1.svg",
             "membershipLevel" : 2,
             "description" : "deals in technology and fun",
             "industry" : "Technology"
@@ -27,7 +27,7 @@
             "address" : "10, Shibiri, Ojo, Lagos",
             "phone" : "234-124-4567",
             "website" : "https://www.baa.com#",
-            "image" : "",
+            "image" : "images/logo7.svg",
             "membershipLevel" : 1,
             "description" : "deals in technology and electronics",
             "industry" : "Technology"
@@ -38,7 +38,7 @@
             "address" : "21, Shibiri, Ojo, Lagos",
             "phone" : "234-123-4967",
             "website" : "https://www.bba.com#",
-            "image" : "",
+            "image" : "images/logo8.svg",
             "membershipLevel" : 1,
             "description" : "deals in money matters",
             "industry" : "Finance"
@@ -49,7 +49,7 @@
             "address" : "1, Shibiri, Ojo, Lagos",
             "phone" : "234-123-4137",
             "website" : "https://www.aba.com#",
-            "image" : "",
+            "image" : "images/logo2.svg",
             "membershipLevel" : 3,
             "description" : "deals in plant and animal produce",
             "industry" : "Agriculture"
@@ -60,7 +60,7 @@
             "address" : "1, Etegbin, Ojo, Lagos",
             "phone" : "234-123-4587",
             "website" : "https://www.caa.com#",
-            "image" : "",
+            "image" : "images/logo3.svg",
             "membershipLevel" : 3,
             "description" : "deals in entertainment",
             "industry" : "Entertainment"
@@ -71,7 +71,7 @@
             "address" : "100, Shibiri, Ojo, Lagos",
             "phone" : "234-123-5100",
             "website" : "https://www.cac.com#",
-            "image" : "",
+            "image" : "images/logo10.svg",
             "membershipLevel" : 2,
             "description" : "deals in technology and equipment",
             "industry" : "Technology"

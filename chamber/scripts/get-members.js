@@ -1,7 +1,7 @@
-const url = "./data/members.json"
-const cards = document.querySelector("#companies")
+const cards = document.querySelector("#companies");
+const url = './data/members.json';
 // This is a function
-async function getMemberData(url) {
+async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
     displayMembers(data.companies);
@@ -13,12 +13,11 @@ const displayMembers = (companies) => {
     companies.forEach(company => {
         let card = document.createElement("div");
         let logo = document.createElement("img");
-        let name = document.createElement("p");
-        let phone = document.createElement("p");
-        let address = document.createElement("p");
-        let link = document.createElement("a");
+        let name = document.createElement("h2");
+        let contact = document.createElement("p");
+        
 
-        name.textContent = `${company.name}`;
+        name.innerHTML = `${company.name}<br><em>${company.description}</em>`;
 
         logo.setAttribute("src", company.image);
         logo.setAttribute("alt", `Logo of ${company.name}`);
@@ -26,17 +25,18 @@ const displayMembers = (companies) => {
         logo.setAttribute("width", "50");
         logo.setAttribute("height", "50");
 
-        address.textContent = `${company.address}`;
+        contact.innerHTML = `
+            <strong>ADDRESS:</strong> ${company.address} <br>
+            <strong>PHONE:</strong> ${company.phone} <br>
+            <strong>WEBSITE:</strong> <a>${company.website}</a> <br>
+            <strong>INDUSTRY:</strong> ${company.industry} <br>
+            <strong>MEMBERSHIP LEVEL:</strong> ${company.membershipLevel} <br>         
+        `;
 
-        phone.textContent = `${company.phone}`;
-
-        link.textContent = `${company.website}`;
 
         card.appendChild(name);
         card.appendChild(logo);
-        card.appendChild(phone);
-        card.appendChild(address);
-        card.appendChild(link);
+        card.appendChild(contact);
 
         cards.appendChild(card);
     });
