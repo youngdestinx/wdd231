@@ -1,0 +1,106 @@
+/* 
+Background color: white
+primary color: #5c8dff
+secondary color:  #ff5cdf
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header,
+.navigations,
+main,
+footer {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+}
+
+header {
+    display: flex;
+}
+
+header div,
+footer ul {
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+}
+
+#ham {
+    margin-left: auto;
+}
+
+#ham::before {
+    content: "≡";
+    display: inline-block;
+    text-decoration: none;
+    font-size: 50px;
+    color: #5c8dff;
+    font-weight: bold;
+}
+
+#ham.show::before {
+    content: "X";
+    display: inline-block;
+    text-decoration: none;
+    font-size: 50px;
+    color: #5c8dff;
+}
+
+#menu,
+footer ul {
+    list-style: none;
+}
+
+#menu li,
+footer img {
+    padding: .5rem;
+}
+
+#menu li {
+    background-color: #5c8dff;
+    border: 1px solid white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "lato";
+}
+
+#wayfinding {
+    color: black;
+}
+
+#menu {
+    display: none;
+}
+
+#menu.show {
+    display: block;
+}
+
+p {
+    line-height: 1.5;
+    font-family: "lato";
+}
+
+h3,
+header span {
+    font-family: "Montserrat";
+    color: #5c8dff;
+}
+
+header span {
+    font-weight: bold;
+}
+
+/*********************Sections design**********************************************/
+
+section:not(.hero) {
+    padding: 1rem;
+}
