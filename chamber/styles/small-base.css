@@ -10,6 +10,7 @@ secondary color:  #ff5cdf
     margin: 0;
 }
 
+
 header,
 .navigations,
 main,
@@ -21,6 +22,10 @@ footer {
 
 header {
     display: flex;
+}
+
+main {
+    background-color: #f2f2f2;
 }
 
 header div,
@@ -39,8 +44,8 @@ footer ul {
     display: inline-block;
     text-decoration: none;
     font-size: 50px;
-    color: #5c8dff;
     font-weight: bold;
+    color: #000;
 }
 
 #ham.show::before {
@@ -48,7 +53,7 @@ footer ul {
     display: inline-block;
     text-decoration: none;
     font-size: 50px;
-    color: #5c8dff;
+    color: #000;
 }
 
 #menu,
@@ -62,18 +67,19 @@ footer img {
 }
 
 #menu li {
+    padding: .5rem 1rem;
+    width: 100%;
     background-color: #5c8dff;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 nav a {
     text-decoration: none;
-    color: white;
     font-family: "lato";
 }
 
 #wayfinding {
-    color: black;
+    color: #000;
 }
 
 #menu {
@@ -92,15 +98,130 @@ p {
 h3,
 header span {
     font-family: "Montserrat";
-    color: #5c8dff;
 }
 
-header span {
-    font-weight: bold;
+footer {
+    background-color: #ff5cdf;
 }
 
 /*********************Sections design**********************************************/
 
-section:not(.hero) {
+h1 {
+    font-family: "Playfair Display";
+    position: relative;
+    padding-top: .5rem;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    border-bottom: 5px solid #ff5cdf;
+}
+
+h2 {
+    font-family: "lato";
+}
+
+section:not(.hero, .spotlight) {
     padding: 1rem;
+    background-color: #fff;
+    margin: 1rem 0;
+}
+
+section:not(.hero, .spotlight) h2{
+    position: relative;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;    
+}
+
+section:not(.hero, .spotlight) h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    border-bottom: 5px solid #ffce5c;
+}
+
+
+.hero {
+    padding: 2rem 0;
+}
+
+.hero div {
+    text-align: center;
+    background-color: #5c8dff;
+    padding: .5rem;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero a {
+    color: rgb(172, 2, 2);
+    padding: .8rem;
+    font-size: 1.2rem;
+}
+
+.hero span {
+    padding: .5rem;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.spotlight article {
+    background-color: #5c8dff;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+
+
+/*....................................Media Query..........................................................*/
+@media only screen and (min-width: 768px) {
+    header,
+    .navigations,
+    .hero,
+    main,
+    footer {
+        max-width: 100%;
+    }
+
+    .navigations {
+        background-color: #f2f2f2;
+    }
+
+    #ham {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menu a:hover {
+        color: #2d00e1 
+    }
+
+    .spotlight {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+
+    .weather {
+        max-width: 50%;
+    }
+
+    footer {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
 }

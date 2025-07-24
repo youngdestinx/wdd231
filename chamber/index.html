@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shibiri Chamber Of Commerce</title>
+    <meta name="description" content="Discovery page of Shibiri Chamber Of Commerce">
+    <meta name="author" content="Destiny Linus">
+
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Shibiri Chamber Of Business">
+    <meta property="og:description" content="This is a resource site for local businesses, community members and visitors in Shibiri">
+    <meta property="og:url" content="https://youngdestinx.github.io/wdd231/chamber">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="images/logo5.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shibiri Chamber of Business">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +32,7 @@
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/no-links.js" defer></script>
     <script src="scripts/get-random-members.js" defer></script>
+    <script src="scripts/weatherApi.js" defer></script>
 
 
 </head>
@@ -31,9 +43,7 @@
             <img src="images/logo4.svg" alt="Business logo" width="24">
             <span>Shibiri Chamber Of Commerce</span>
         </div>
-
-        <a id="ham" class="no-link" href="#"></a>
-        
+        <a id="ham" class="no-link" href="#"></a>        
     </header>
 
     <nav class="navigations">
@@ -50,8 +60,11 @@
         <h1>Explore Us</h1>
 
         <section class="hero">
-            <a href="join.html">Join Now</a>
-            <img src="" alt="hero photo" width="480">
+            <div>
+                <span>Shibiri Chamber Of Business</span>
+                <a href="join.html">Join Now</a>
+            </div>
+            <img src="images/fun.webp" alt="hero photo" width="480">
         </section>
 
         <section class="event">
@@ -78,16 +91,17 @@
 
     </main>
 
-    <footer>
+    <footer> 
+
         <div>
             <h3>Shibiri Chamber Of Commerce</h3>
-            <p id="span">
+            <p>
                 35, Onaolapo Street <br>
                 info@shibiricc.org <br>
                 (234) 9152-680-996 <br>
             </p>
         </div>
-        
+       
         <nav>
             <ul>
                 <li><a class="no-link" href="#"><img src="images/whatsapp.svg" alt="whatsapp link" width="50"></a></li>
@@ -101,7 +115,7 @@
             Linus E. Destiny <br>
             <span id="currentyear"></span> Shibiri Chamber Of Commerce <br>
             <span id="lastModified"></span> <br>
-        </p>        
+        </p>                    
     </footer>
 </body>
 </html>
