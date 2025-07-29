@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shibiri Chamber Of Commerce</title>
+    <meta name="description" content="Join Us Form">
+    <meta name="author" content="Destiny Linus">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Shibiri Chamber Of Business">
+    <meta property="og:description" content="This is a resource site for local businesses, community members and visitors in Shibiri">
+    <meta property="og:url" content="https://youngdestinx.github.io/wdd231/chamber">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="images/logo5.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shibiri Chamber of Business">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="scripts/getDialog.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/no-links.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/logo4.svg" alt="Business logo" width="24">
+            <span>Shibiri Chamber Of Commerce</span>
+        </div>
+        <a id="ham" class="no-link" href="#"></a>        
+    </header>
+
+    <nav class="navigations">
+        <ul id="menu">
+            <li><a href="directory.html">Home</a></li>
+            <li><a href="index.html">Discover</a></li>
+            <li><a href="business-directory.html">Business Directory</a></li>
+            <li><a href="join.html" id="wayfinding">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Sign Up</h1>
+        <form action="thanks.html" method="get">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name*<input type="text" name="fname" title="Enter your first name" autocomplete="given-name" required></label>
+                <label>Last Name*<input type="text" name="lname" title="Enter your last name"  autocomplete="family-name" required></label>
+                <label>Organizational Title<input type="text" name="otitle" title="Enter your Organizational title" pattern="[a-zA-Z/s-] {7,}" autocomplete="organization-title"></label>
+                <label>Email Address* <input type="email" name="email" title="Enter your email address here" autocomplete="email" placeholder="someone@gmail.com" required> </label>
+                <label>Mobile Phone Number*<input type="phone" name="phone" title="Enter your phone number here" autocomplete="on" required></label>
+                <label>Business/Organization's Name <input type="text" name="bname" title="Enter your business or organization name" autocomplete="organization" required></label>
+                
+                <div>Membership Level</div>
+                <label><input type="radio" name="Membership" value="np Membership">Non Profit Membership</label>
+                <label><input type="radio" name="Membership" value="bronze Membership">Bronze Membership</label>
+                <label><input type="radio" name="Membership" value="silver Membership">Silver Membership</label>
+                <label><input type="radio" name="Membership" value="gold Membership">Gold Membership</label>
+                
+                <label>Description <textarea name="description" title="Please describe your business or organization here" rows="5" cols="30"></textarea></label>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+            </fieldset>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <section>
+            <h2>Membership Levels</h2>
+
+            <article>
+                <h3>Non Profit Membership Level</h3>
+                <button class="open-btn" data-dialog-id="dialog1">Learn More</button>
+            </article>
+
+            <article>
+                <h3>Bronze Membership Level</h3>
+                <button class="open-btn" data-dialog-id="dialog2">Learn More</button>
+            </article>
+
+            <article>
+                <h3>Silver Membership Level</h3>
+                <button class="open-btn" data-dialog-id="dialog3">Learn More</button>
+            </article>
+
+            <article>
+                <h3>Gold Membership Level</h3>
+                <button class="open-btn" data-dialog-id="dialog4">Learn More</button>
+            </article>
+        </section>
+
+        <dialog id="dialog1">
+            <button class="close-btn">X</button>
+            
+            <h2>Non Profit Membership Level</h2>
+
+            <p><strong>Description: </strong>
+                This gives access to only non profit organization at a cost free basis <br>
+                <strong>Benefits: </strong> <br>
+                Get free cards and magazines.
+            </p>
+        </dialog>
+
+        <dialog id="dialog2">
+            <button class="close-btn">X</button>
+            
+            <h2>Bronze Membership Level</h2>
+
+            <p><strong>Description: </strong>
+                This gives access to all of our services which includes networking event,
+                newsletter, workshops and premium events at a cost of <strong>$ 19.99</strong> <br>
+                <strong>Benefits: </strong> <br>
+                newsletter <br> workshops <br> networking events <br> premium service <br>
+        
+        </dialog>
+
+        <dialog id="dialog3">
+            <button class="close-btn">X</button>
+            
+            <h2>Silver Membership Level</h2>
+
+            <p><strong>Description: </strong>
+                Gain access to all the Bronze Membership access including exclusive events
+                with the top 1% of the industry, mentors and accountability partners at
+                <strong>$39.99</strong><br>
+                <strong>Benefits: </strong> <br>
+                All Bronze Membership packages <br>
+                One on one business coach/mentors <br>
+                Exclusive premium event <br>
+        
+        </dialog>
+
+        <dialog id="dialog4">
+            <button class="close-btn">X</button>
+            
+            <h2>Gold Membership Level</h2>
+
+            <p><strong>Description: </strong>
+                Gain access to all Bronze and Silver Membership access including hosting your
+                own events, advertising, partnering and mentoring at a fee of 
+                <strong>$199.99</strong> <br>
+                <strong>Benefits: </strong> <br>
+                All Bronze Membership packages <br>
+                All Silver Membership packages <br>
+                Advertising <br>
+                Partnering <br>
+                Mentoring <br>        
+        </dialog>
+    </main>
+
+    <footer> 
+
+        <div>
+            <h3>Shibiri Chamber Of Commerce</h3>
+            <p>
+                35, Onaolapo Street <br>
+                info@shibiricc.org <br>
+                (234) 9152-680-996 <br>
+            </p>
+        </div>
+       
+        <nav>
+            <ul>
+                <li><a class="no-link" href="#"><img src="images/whatsapp.svg" alt="whatsapp link" width="50"></a></li>
+                <li><a class="no-link" href="#"><img src="images/facebook.svg" alt="facebook link" width="50"></a></li>
+                <li><a class="no-link" href="#"><img src="images/linkedin.svg" alt="linkedin link" width="50"></a></li>
+            </ul>
+        </nav>
+
+        <p>
+            WDD231 Class Project <br>
+            Linus E. Destiny <br>
+            <span id="currentyear"></span> Shibiri Chamber Of Commerce <br>
+            <span id="lastModified"></span> <br>
+        </p>                    
+    </footer>
+    
+</body>
+</html>
