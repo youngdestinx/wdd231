@@ -124,7 +124,7 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="phone"],
+input[type="tel"],
 textarea {
     display: block;
     padding: .75rem;
@@ -249,7 +249,7 @@ dialog button {
     padding: .5rem 1rem;
     background-color: #5c8dff;
     margin-bottom: 2rem;
-    font-size: 1.5;
+    font-size: 1.5rem;
     font-family: "Playfair Display";
     border: 1px solid #f2f2f2;
 }

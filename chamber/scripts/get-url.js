@@ -2,7 +2,7 @@ const params = new URLSearchParams(window.location.search);
 const fname = params.get('fname');
 const lname = params.get('lname');
 const email = params.get('email');
-const phone = params.get('phone');
+const phone = params.get('tel');
 const bname = params.get('bname');
 const timestamp = params.get('timestamp')
 
