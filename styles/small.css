@@ -157,20 +157,27 @@ section {
     width: 100%;  
 }
 
-#course-info {
-    display: none;
+dialog {
+    border: 1px solid rgb(0 0 0/ 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 640px;
 }
 
-#course-info.show {
-    display: block;
+::backdrop {
+    background-color: rgb(0 0 0 / 80%);
 }
 
-#course-info p {
-    line-height: 1.2;
-    font-size: 1rem;
-    background-color: #7d5cffc3;
-    padding: 1rem ;
-    color: var(--primary-color);
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
 }
 
 #total-credits{

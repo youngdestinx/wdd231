@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header,
+main,
+footer {
+    margin: 2rem;
+    padding: 1rem;
+}
+
+header {
+    background-color: #0000ff;
+}
+
+main {
+    background-color: #e6e6e6;
+}
+
+footer {
+    background-color: #ffff00;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: "Monsterrat";
+    font-weight: 400;
+    color: #ffffff;
+}
+
+main h2 {
+    color: #000;
+    position: relative;
+    padding: .5rem;
+}
+
+main h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    width: 5%;
+    max-width: 60%;
+    border: 3px solid #ff0080;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: "lato";
+    width: 60%;
+    padding: 1rem 2rem;
+}
+
+blockquote {
+    font-family: "Playfair Display";
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
