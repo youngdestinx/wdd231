@@ -1,0 +1,38 @@
+main {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+    background-color: #f2f2f2;
+    margin-top: 5rem;
+}
+
+h1 {
+    font-family: "Playfair Display";
+    font-weight: 100;
+    padding: 1rem 0;
+    width: 100%;
+    position: relative;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 20%;
+    border: 3px solid #ff5cdf;
+}
+
+h2 {
+    font-family: "Monsterrat";
+    font-weight: 300;
+}
+
+p {
+    line-height: 1.5;
+    font-family: "lato";
+}
+
+strong {
+    font-weight: 500;
+    font-family: "Monsterrat";
+}
