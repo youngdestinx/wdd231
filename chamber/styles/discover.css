@@ -177,7 +177,8 @@ footer {
 
 #sidebar div {
     font-size: 1.2rem;
-    font-family: "Playfair Display";
+    font-family: "Monsterrat";
+    font-weight: 900;
 }
 
 #places img,
@@ -259,7 +260,7 @@ h1::before {
 }
 
 @media only screen and (min-width: 64rem) {
-    
+
     header,
     .navigations,
     main,
