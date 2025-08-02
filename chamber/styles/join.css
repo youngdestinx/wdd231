@@ -110,7 +110,7 @@ fieldset {
 
 legend, form div {
     font-family: "Montserrat";
-    color: #ffb812;
+    color: hwb(42 2% 40%);
     padding: .5rem;
     font-weight: 600;
 }
