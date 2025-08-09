@@ -1,0 +1,109 @@
+{
+    "members" : [
+        {
+            "image" : "images/school.webp",
+            "alt" : "School website design",
+            "header" : "Learn How to Build a School Website",
+            "description" : "Create a website for your school or educational institution with our excellent tutorials and expert advice.",
+            "cta" : "Start Now"
+        },
+        {
+            "image" : "images/ecommerce.webp",
+            "alt" : "E-commerce website design",
+            "header" : "Learn How to Build a E-commerce Website",
+            "description" : "Sell your product online with our comprehensive e-commerce website building tutorials and expert guidance.",
+            "cta" : "Start Now"
+        },
+        {
+            "image" : "images/blog.webp",
+            "alt" : "Blog website design",
+            "header" : "Learn How to Build a Blog Website",
+            "description" : "Share your thoughts and ideas with the world by building a blog website with our step by step tutorials and expert guidance",
+            "cta" : "Start Now"
+        },
+        {
+            "image" : "images/portfolio.webp",
+            "alt" : "Portfolio website design",
+            "header" : "Learn How to Build a Portfolio Website",
+            "description" : "Showcase your work and skills with a professional portfolio website built with our expert tutorials and guidance.",
+            "cta" : "Start Now"
+        },
+        {
+            "image" : "images/non-profit.webp",
+            "alt" : "Non-profit website design",
+            "header" : "Learn How to Build a Non-profit Website",
+            "description" : "Make a difference with a website for your non-profit organization built with our easy to follow tutorials and expert advice.",
+            "cta" : "Start Now"
+        },
+        {
+            "image" : "images/personal.webp",
+            "alt" : "Personal website design",
+            "header" : "Learn How to Build a Personal Website",
+            "description" : "Establish your online presence with a personal website built with our comprehensive tutorials and expert guidance.",
+            "cta" : "Start Now"
+        },    
+        {
+            "image" : "images/real-estate.webp",
+            "alt" : "Real estate website design",
+            "header" : "Learn How to Build a Real Estate Website",
+            "description" : "Find your dream home or showcase your properties with a real estate website built with our expert tutorials and guidance.",
+            "cta" : "Start Now"
+        },    
+        {
+            "image" : "images/restaurant.webp",
+            "alt" : "Restaurant website design",
+            "header" : "Learn How to Build a Restaurant Website",
+            "description" : "Attract new customers and showcase your menu with a restaurant websitebuilt with our easy to follow tutorials and expert advice.",
+            "cta" : "Start Now"
+        },   
+        {
+            "image" : "images/travel.webp",
+            "alt" : "Hotel website design",
+            "header" : "Learn How to Build a Hotel Website",
+            "description" : "Welcome guests and showcase your amenities with a hotel website built with our comprehensive tutorials and expert guidance.",
+            "cta" : "Start Now"
+        },    
+        {
+            "image" : "images/fitness.webp",
+            "alt" : "Fitness website design",
+            "header" : "Learn How to Build a Fitness Website",
+            "description" : "Get fit and healthy with a fitness website built with our expert tutorials and expert advice.",
+            "cta" : "Start Now"
+        },    
+        {
+            "image" : "images/event.webp",
+            "alt" : "Event website design",
+            "header" : "Learn How to Build an Event Website",
+            "description" : "Plan and promote your events with a website built with our easy to follow tutorials and expert guidance.",
+            "cta" : "Start Now"
+        },
+        {
+            "image" : "images/photography.webp",
+            "alt" : "Photography website design",
+            "header" : "Learn How to Build a Photography Website",
+            "description" : "Showcse your photos and attract new clients with a photography website built with a comprehensive tutorials and expert guidance.",
+            "cta" : "Start Now"
+        },
+        {
+            "image" : "images/travel.webp",
+            "alt" : "Travel website design",
+            "header" : "Learn How to Build a Travel Website",
+            "description" : "Explore the world and plan your trips with a travel website built with our expert tutorials and guidance.",
+            "cta" : "Start Now"
+        }, 
+        {
+            "image" : "images/news.webp",
+            "alt" : "News website design",
+            "header" : "Learn How to build a News Website",
+            "description" : "Keep others in touch with latest trends and findings with a news website built with our excellent tutorials and guidance.",
+            "cta" : "Start Now"
+        },
+        {
+            "image" : "images/dating.webp",
+            "alt" : "Dating website design",
+            "header" : "Learn How to build a Dating Website",
+            "description" : "Connect hearts all over the world with a dating website built with our expert tutorials and guidance.",
+            "cta" : "Start Now"
+        }
+    ]
+}

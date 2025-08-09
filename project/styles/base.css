@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+header,
+.navigations,
+main,
+footer {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: #ffff;
+    padding: .5rem 1rem;
+}
+
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ham {
+    margin-left: auto;
+}
+
+#ham::before {
+    content: "≡";
+    display: inline-block;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+}
+
+#ham.show::before {
+    content: "X";
+    display: inline-block;
+    text-decoration: none;
+    font-size: 50px;
+    color: #000;
+}
+
+.navigations h2 {
+    text-align: center;
+    background-color: #ffff00;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: .3rem;
+}
+
+#menu,
+footer ul {
+    list-style: none;
+}
+
+#menu li {
+    padding: .5rem;
+}
+
+#menu li {
+    padding: .5rem 1rem;
+    width: 100%;
+    background-color: #ffff004f;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color:  #0000ff;
+}
+
+#wayfinding {
+    color: #000;
+}
+
+#menu {
+    display: none;
+}
+
+#menu.show {
+    display: block;
+}
+
+body {
+    font-family: "lato";
+    background-color: #e6e6e6;
+}
+
+h1, h2, h3 {
+    font-family: "Monsterrat";
+    font-weight: 300;
+}
+
+button, a {
+    font-family: "Playfair Display";
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+footer h3 {
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+
+footer h3 {
+    position: relative;
+    width: 50%;
+}
+
+footer h3::after {
+    content: "";
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 3px solid #555510;
+}
+
+footer p {
+    padding-bottom: 1rem;
+    line-height: 1.5;
+}
+
+footer ul {
+    display: flex;
+    gap: 1rem;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    padding-bottom: 1rem;
+}
+
+#lastModified {
+    display: block;
+    width: 50%;
+}
+
+
+#start {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: .3rem;
+    border: 1px solid #0000ff;
+    background: #0000ff;
+    color: #ffff;
+}
+
+
+
+

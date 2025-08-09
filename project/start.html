@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!------------------------------------------Meta Description-------------------------------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="Join Us Form">
+    <meta name="author" content="Destiny Linus">
+
+    <!---------------------------------------------Favicon--------------------------------------->
+
+
+    <!---------------------------------------------Fonts----------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!---------------------------------------------Styles---------------------------------------->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/start.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!---------------------------------------------Scripts--------------------------------------->
+    <script type="module" src="scripts/basic.js"></script>
+</head>
+<body>
+    <header>
+        <div class="person">
+            <img src="images/person.svg" alt="brand logo" width="24">
+            <span>Linus Ekemini Destiny</span>
+        </div>
+        <a id="ham" href="#"></a>        
+    </header>
+
+    <nav class="navigations">
+        <ul id="menu">
+            <h2>Navigations</h2>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="start.html" id="wayfinding">Start Now</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Start Now</h1>
+            <h2>Register Now for Web Development Class, Premium Plan</h2>
+            <p>Learn how to build and design a functional website. <br>
+                Master the use of:</p>
+            <ol>
+                <li><strong>HTML</strong></li>
+                <li><strong>CSS</strong></li>
+                <li><strong>JavaScript</strong></li>
+            </ol>
+            <p>Other Packages and Bonuses includes:</p>
+            <ol>
+                <li><strong>Designing responsive website across multiple screen sizes and types</strong></li>
+                <li><strong>Writing a great copy and story telling</strong></li>
+                <li><strong>Learing design principles</strong></li>
+                <li><strong>Building innovative website functionalities</strong></li>
+                <li><strong>Logical reasoning</strong></li>
+            </ol>
+            <p>Price: <strong>60,000 Naira monthly</strong></p>
+            <p>Duration: 12 weeks</p>
+            <a class="start gold" href="#">Register Now</a>
+        </section>
+
+        <section>
+            <h2>Register Now for Web Development Class, Basic Plan</h2>
+            <p>Learn how to build and design a basic website. <br>
+                Master the use of:</p>
+            <ol>
+                <li><strong>HTML</strong></li>
+                <li><strong>CSS</strong></li>
+            </ol>
+            <p>Other Packages and Bonuses includes:</p>
+            <ol>
+                <li><strong>Designing responsive website across multiple screen sizes and types</strong></li>
+                <li><strong>Learing design principles</strong></li>
+            </ol>
+            <p>Price: <strong>40,000 Naira monthly</strong></p>
+            <p>Duration: 12 weeks</p>
+            <a class="start silver" href="#">Register Now</a>
+        </section>
+
+        <section>
+            <h2>Register Now for Web Development Class, Starter Plan</h2>
+            <p>Learn how to use basic computer softwares. <br>
+                Master the basic use of:</p>
+            <ol>
+                <li><strong>Ms Word</strong></li>
+                <li><strong>Excel</strong></li>
+            </ol>
+            <p>Other Packages and Bonuses includes:</p>
+            <ol>
+                <li><strong>Writing a great copy and story telling</strong></li>
+                <li><strong>Typing fast</strong></li>
+            </ol>
+            <p>Price: <strong>30,000 Naira monthly</strong></p>
+            <p>Duration: 12 weeks</p>
+            <a class="start bronze" href="#">Register Now</a>
+        </section>
+
+        <dialog>
+            <form action="thanks.html" method="get">
+                <fieldset>
+                    <legend>Student Information</legend>
+                    <label>First Name<span>*</span>:<input type="text" name="fname" title="Enter your first name" autocomplete="given-name" required></label>
+                    <label>Last Name <span>*</span:><input type="text" name="lname" title="Enter your last name"  autocomplete="family-name" required></label>
+                    <label>WhatsApp Number <span>*</span>:<input type="tel" name="tel" title="Enter your whatsApp number here" autocomplete="on" required></label>
+                    <label>Email Address <span>*</span>: <input type="email" name="email" title="Enter your email address here" autocomplete="email" placeholder="someone@gmail.com" required> </label>
+                    <label>Packages: <input id="package" type="text" value=""></label>
+                </fieldset>  
+                
+                <button type="submit">Register</button>             
+            </form>
+
+            <button class="close-btn">X</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <section>
+            <h3>Start Now!</h3>
+            <p>Register for our class and gain essential web development skill <br></p>
+            <a id="start" href="start.html">Start Now</a>
+        </section>
+
+        <nav>
+            <h3>Talk to me on Socials</h3>
+            <ul>
+                <li><a href="https://wa.me/2349152680996"><img src="images/whatsapp.svg" alt="whatsapp link" width="50"></a></li>
+                <li><a href="https://youngdestinx@gmail.com"><img src="images/gmail.svg" alt="gmail link" width="50"></a></li>
+                <li><a href="https://www.linkedin.com/in/destinylinus"><img src="images/linkedin.svg" alt="linkedin link" width="50"></a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <div>
+                <img src="images/person.svg" alt="brand logo" width="50" height="50">
+                <span>Linus Ekemini Destiny</span>
+            </div>
+            
+            <p>
+                WDD231 Class Project <br>
+                10, Onaolapo Street, <br>
+                Ojo, Lagos. <br>
+                Nigeria. <br>
+            </p>
+            <span id="lastModified"></span> <br>
+            <span id="currentyear" ></span> <br>
+        </section>                    
+    </footer>   
+</body>
+</html>

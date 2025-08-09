@@ -1,0 +1,94 @@
+main section {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+h1 {
+    padding: 1rem;
+    position: relative;
+    width: 50%;
+}
+
+h1::after {
+    content: "";
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    border: 3px solid #00ff80;
+}
+
+
+main section h2 {
+    width: 50%;
+    position: relative;
+    padding: 1rem;
+}
+
+main section h2::after {
+    content: "";
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    border: 3px solid #ff0080;
+}
+
+main section p {
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+
+main section img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.starts {
+    background-color: #0000ff;
+    color: #fff;
+}
+
+.starts p, .about p {
+    text-align: center;
+}
+
+.starts .start {
+    background-color: #ffff00;
+    color: #000;
+}
+
+#choose,
+#about,
+#now,
+#offer {
+    margin-top: 1rem;
+}
+
+.choose li img {
+    width: 1.5rem;
+}
+
+.choose li {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    padding: 0 1rem;
+}
+
+.start {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    padding: .3rem;
+    border: 1px solid #0000ff;
+    background: #0000ff;
+    color: #ffff;
+}
