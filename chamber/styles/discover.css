@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+header,
+.navigations,
+main,
+footer {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+}
+
+header {
+    display: flex;
+    background-color: #fff;
+}
+
+main {
+    border: 1px solid #f2f2f2;
+    padding: 1rem 2rem;
+}
+
+header div,
+footer ul {
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+}
+
+#ham {
+    margin-left: auto;
+}
+
+#ham::before {
+    content: "≡";
+    display: inline-block;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+}
+
+#ham.show::before {
+    content: "X";
+    display: inline-block;
+    text-decoration: none;
+    font-size: 50px;
+    color: #000;
+}
+
+#menu,
+footer ul {
+    list-style: none;
+}
+
+#menu li,
+footer img {
+    padding: .5rem;
+}
+
+#menu li {
+    padding: .5rem 1rem;
+    width: 100%;
+    background-color: #5c8dff;
+    border: 1px solid black;
+}
+
+.navigations {
+    background-color: #f2f2f2;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "lato";
+}
+
+#wayfinding {
+    color: #000;
+}
+
+#menu {
+    display: none;
+}
+
+#menu.show {
+    display: block;
+}
+
+p {
+    line-height: 1.5;
+    font-family: "lato";
+}
+
+h3,
+header span {
+    font-family: "Montserrat";
+}
+
+footer {
+    background-color: #ff5cdf;
+}
+
+/*********************************Main body********************************************/
+#content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
+#places div {
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "description"
+    "images"
+    "address"
+    "button";
+    row-gap: 1rem;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background-color: #f2f2f2;
+}
+
+#places h2 {
+    grid-area: title;
+}
+
+#places figure {
+    grid-area: images;
+}
+
+#places address {
+    grid-area: address;
+}
+
+#places p {
+    grid-area: description;
+}
+
+#places button {
+    grid-area: button;
+}
+
+#places img {
+    animation: breathe 4s infinite;
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+#sidebar div,
+#places button {
+    text-align: center;
+    font-family: "lato";
+    font-weight: 400;
+    background-color: #5c8dff;
+    color: #fff;
+    padding: .5rem;
+    border: 1px solid #f2f2f2;
+}
+
+#sidebar div {
+    font-size: 1.2rem;
+    font-family: "Monsterrat";
+    font-weight: 900;
+}
+
+#places img,
+#places h2,
+#places address,
+#places p,
+#places button {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Monsterrat";
+    position: relative;
+    padding-top: 1rem;
+}
+
+h1::before {
+    content: "";
+    width: 20%;
+    border: 3px solid #ff5cdf;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#places h2::after {
+    content: "";
+    width: 30%;
+    display: block;
+    margin: .5rem 0;
+    border: 3px solid #ffb812;
+}
+
+/**************************Media Query**************************************************/
+
+
+@media only screen and (min-width: 40rem) {
+
+    header,
+    .navigations,
+    main,
+    footer {
+        max-width: 100%;
+        padding: .5rem 1rem;
+    }
+
+    .navigations {
+        background-color: #f2f2f2;
+    }
+
+    #ham {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menu a:hover {
+        color: #fff
+    }
+
+    footer {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #places div {
+        display: grid;
+        grid-template-areas: 
+        "images title"
+        "images description"
+        "images address"
+        "images button";
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+
+    header,
+    .navigations,
+    main,
+    footer {
+        max-width: 100%;
+        padding: .5rem 1rem;
+    }
+
+    .navigations {
+        background-color: #f2f2f2;
+    }
+
+    #ham {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menu a:hover {
+        color: #fff
+    }
+
+    footer {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #places div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

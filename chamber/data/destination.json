@@ -1,0 +1,58 @@
+[
+    {
+        "name" : "Osun Osogbo Sacred Grove",
+        "address" : "Oshogbo, Osun Lagos, Nigeria",
+        "description" : "A sacred forest and UNESCO World Heritage Site, home to ancient Osun shrines and artifacts.",
+        "image": "images/grove.webp"
+    },
+
+
+    {
+        "name" : "National Museum Lagos",
+        "address" : "Onikan, Lagos Island, Lagos, Nigeria",
+        "description" : "A Museum showing Nigeria rich cultural heritage, with exhibits on art history, and archaeology.",
+        "image": "images/wild.webp"
+    },
+
+    {
+        "name" : "Erin Ijesha Waterfalls",
+        "address" : "Erin Ijesha, Osun, Lagos, Nigeria",
+        "description" : "A scentic waterfall surrounded by lush vegetations, perfect for hiking and relaxation.",
+        "image": "images/falls.webp"
+    },
+
+    {
+        "name" : "Lagos National Theatre",
+        "address" : "Iganmu, Lagos, Nigeria",
+        "description" : "An Iconic theatre showcasing Nigeria`s rich cultural heriatge, with performance and exhibitions.",
+        "image": "images/lagos-national-theatre.webp"
+    },
+
+    {
+        "name" : "Kano City Walls",
+        "address" : "Kano, Lagos, Nigeria",
+        "description" : "An ancient fortified city wall, symbolizing the rich history and culture of the Hausa people.",
+        "image": "images/kano-walls.webp"
+    },
+
+    {
+        "name" : "Abuja National Mosque",
+        "address" : "Abuja FCT, Lagos, Nigeria",
+        "description" : "A stunning mosque and one of the largest in Africa, featuring beautiful architecture and tranquil gardens.",
+        "image": "images/abuja-mosque.webp"
+    },
+
+    {
+        "name" : "Obudu Plateau",
+        "address" : "Cross River, Lagos, Nigeria",
+        "description" : "A scentic plateau with breathtaking views, perfect for hiking, camping, and nature exploration.",
+        "image": "images/obudu-plateau.webp"
+    },
+
+    {
+        "name" : "Yankari National Park",
+        "address" : "Bauchi, Lagos, Nigeria",
+        "description" : "A national park featuring diverse wildlife, hot springs, and scenic laandscapes.",
+        "image": "images/yankari-national-park.webp"
+    }
+]
