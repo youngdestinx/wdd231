@@ -1,0 +1,45 @@
+body {
+    font-family: "lato";
+    background-color: #e6e6e6;
+}
+
+main {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+h1 {
+    font-family: "Playfair Display";
+    font-weight: 300;
+    padding: .5rem 0;
+    width: 100%;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 20%;
+    border: 3px solid #ff0080;
+}
+
+h2 {
+    font-family: "Monsterrat";
+    font-weight: 300;
+    padding: 1rem;
+}
+
+button {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: .5rem;
+    border: 1px solid #0000ff;
+    background: #0000ff;
+    color: #ffff;
+    width: fit-content;
+}
