@@ -10,12 +10,12 @@ main section {
 h1 {
     padding: 1rem;
     position: relative;
-    width: 50%;
+    max-width: 80%;
 }
 
 h1::after {
     content: "";
-    width: 30%;
+    width: 15%;
     position: absolute;
     top: 0;
     left: 1rem;
@@ -24,7 +24,7 @@ h1::after {
 
 
 main section h2 {
-    width: 50%;
+    max-width: 80%;
     position: relative;
     padding: 1rem;
 }
