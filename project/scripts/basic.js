@@ -3,6 +3,7 @@ import footer from "./footer.mjs";
 import noLinks from "./no-links.mjs";
 import showModals from "./modal.mjs";
 import displayPack from "./packages.mjs";
+import {displayMessage} from "./greetings.mjs";
 
 hamburger();
 footer();
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
     showModals();
 })
 displayPack();
+displayMessage();
 
 // discovery
 // ./filename is used for items in the same folder

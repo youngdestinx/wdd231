@@ -12,8 +12,8 @@ main {
 
 h1 {
     font-family: "Playfair Display";
-    font-weight: 300;
-    padding: .5rem 0;
+    font-weight: 500;
+    padding: 1rem;
     width: 100%;
     position: relative;
 }
@@ -21,15 +21,15 @@ h1 {
 h1::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0%;
+    bottom: 0;
+    left: 1rem;
     width: 20%;
     border: 3px solid #ff0080;
 }
 
 h2 {
     font-family: "Monsterrat";
-    font-weight: 300;
+    font-weight: 100;
     padding: 1rem;
 }
 
@@ -42,4 +42,14 @@ button {
     background: #0000ff;
     color: #ffff;
     width: fit-content;
+}
+
+p {
+    font-family: "lato";
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+span {
+    color: #0000ff;
 }
