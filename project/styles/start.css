@@ -7,22 +7,6 @@ main section {
     margin: 1rem 0;
 }
 
-h1 {
-    padding: 1rem;
-    position: relative;
-    max-width: 80%;
-}
-
-h1::after {
-    content: "";
-    width: 15%;
-    position: absolute;
-    top: 0;
-    left: 1rem;
-    border: 3px solid #00ff80;
-}
-
-
 main section h2 {
     max-width: 80%;
     position: relative;
