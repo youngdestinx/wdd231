@@ -50,19 +50,7 @@ main section img {
     margin: 0;
 }
 
-.starts {
-    background-color: #0000ff;
-    color: #fff;
-}
 
-.starts p, .about p {
-    text-align: center;
-}
-
-.starts .start {
-    background-color: #ffff00;
-    color: #000;
-}
 
 #choose,
 #about,
@@ -91,4 +79,8 @@ main section img {
     border: 1px solid #0000ff;
     background: #0000ff;
     color: #ffff;
+}
+
+.starts p, .about p {
+    text-align: center;
 }

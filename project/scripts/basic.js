@@ -1,13 +1,11 @@
 import hamburger from "./hamburger.mjs";
 import footer from "./footer.mjs";
-import noLinks from "./no-links.mjs";
 import showModals from "./modal.mjs";
 import displayPack from "./packages.mjs";
 import {displayMessage} from "./greetings.mjs";
 
 hamburger();
 footer();
-noLinks();
 
 document.addEventListener("DOMContentLoaded", ()=> {
     showModals();

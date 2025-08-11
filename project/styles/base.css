@@ -170,6 +170,17 @@ footer div {
     color: #ffff;
 }
 
+.starts {
+    background-color: #0000ff;
+    color: #fff;
+}
+
+
+.starts .start {
+    background-color: #ffff00;
+    color: #000;
+}
+
 
 
 
