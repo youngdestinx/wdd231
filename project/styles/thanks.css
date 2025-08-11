@@ -33,8 +33,9 @@ h2 {
     padding: 1rem;
 }
 
-button {
+a {
     text-align: center;
+    text-decoration: none;
     display: block;
     margin: 0 auto;
     padding: .5rem;
