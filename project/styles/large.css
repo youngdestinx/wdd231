@@ -24,14 +24,25 @@
         background-color: #000;
     }
 
-    .hero {
+    main {
         display: grid;
-        grid-template-areas:
-        "images header" 
-        "images title"
-        "images design"
-        "images body"
-        "images cta";
+        grid-template-areas: 
+            "hero hero"
+            "section1 section2"
+            "section3 section3"
+            "section4 section5";
+        column-gap: 2rem;
+    }
+
+    .hero {
+        grid-area: hero;
+        display: grid;
+        grid-template-areas: 
+            "images header"
+            "images title"
+            "images design"
+            "images body"
+            "images cta";
     }
 
     .hero h1 {
@@ -40,22 +51,100 @@
 
     .hero h2 {
         grid-area: title;
-    }
-
-    .hero h2::after {
-        grid-area: design;
-    }
-
-    .hero img {
-        grid-area: images;
+        margin-top: -25rem;
+        position: relative;
     }
 
     .hero p {
         grid-area: body;
+        margin-top: -20rem;
     }
 
-    .hero a {
+    .hero h2::after {
+        grid-area: design;
+        position: absolute;
+        bottom: 21rem;
+    }
+
+    .hero a{
+        grid-area: cta;
+        position: relative;
+        bottom: 18rem;
+    }
+
+    .choose {
+        grid-area: section1;
+    }
+
+    .legit {
+        grid-area: section3;
+        display: grid;
+        grid-template-areas: 
+            "image title"
+            "image design"
+            "image images"
+            "image message"
+            "image messages"
+            "image cta";
+    }
+
+    .legit #legits {
+        grid-area: images;
+        width: 90%;
+        margin: .5rem auto;
+    }
+
+    .legit #legit {
+        grid-area: image;
+    }
+
+    .legit #first {
+        grid-area: message;
+    }
+
+    .legit #second {
+        grid-area: messages;
+    }
+
+    .legit a {
         grid-area: cta;
     }
+
+    .legit h2 {
+        grid-area: title;
+    }
+
+    .legit h2::after {
+        grid-area: design;
+    }
+
+    .offer {
+        grid-area: section2;
+    }
+
+    .offer img {
+        width: 74%;
+        margin: 0 auto;
+    }
+
+    .about {
+        grid-area: section5;
+    }
+
+    .about img {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .starts {
+        grid-area: section4;
+    }
+
+    #start {
+        display: block;
+        text-align: left;
+        margin: 0 1rem;
+    }
+
 }
 
