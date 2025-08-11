@@ -1,0 +1,61 @@
+@media only screen and (min-width: 768px) {
+    header,
+    .navigations,
+    main,
+    footer {
+        max-width: 100%;
+        padding: .5rem 1rem;
+    }
+
+    #ham {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    header {
+        position: none;
+    }
+
+    #menu a:hover {
+        color:  #fff;
+        background-color: #000;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-areas:
+        "images header" 
+        "images title"
+        "images design"
+        "images body"
+        "images cta";
+    }
+
+    .hero h1 {
+        grid-area: header;
+    }
+
+    .hero h2 {
+        grid-area: title;
+    }
+
+    .hero h2::after {
+        grid-area: design;
+    }
+
+    .hero img {
+        grid-area: images;
+    }
+
+    .hero p {
+        grid-area: body;
+    }
+
+    .hero a {
+        grid-area: cta;
+    }
+}
+
